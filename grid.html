@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="grid.css" />
+
+    <title>Ferguson Dashboard</title>
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+      <a href="#" class="brand">
+        <i class="bx bxs-dashboard"></i>
+        <span class="text">Dashboard</span>
+      </a>
+      <ul class="side-menu top">
+        <li>
+          <a href="./grid.html">
+            <i class="bx bx-bar-chart-square"></i>
+            <span class="text">Overview</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-plus"></i>
+            <span class="text">New plan</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-home-alt"></i>
+            <span class="text">Hub</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-user-pin"></i>
+            <span class="text">Assigned to me</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="side-menu">
+        <li>
+          <div class="sub--text">Pinned</div>
+          <a href="#">
+            <i class="bx bxs-pin"></i>
+            <span class="text">Ferguson</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- SIDEBAR -->
+
+    <!-- CONTENT -->
+    <section id="content">
+      <!-- NAVBAR -->
+      <nav>
+        <i class="bx bx-menu"></i>
+        <a href="#" class="nav-link ferguson" style="font-size: 20px"
+          >Ferguson</a
+        >
+        <a href="grid.html" class="nav-link analyt">Grid</a>
+        <a href="#" class="nav-link analyt">Board</a>
+        <a href="#" class="nav-link analyt">Charts</a>
+        <a href="#" class="profile flex left-margin">
+          <img src="img/user.jpg" />
+          <span class="image-text">user</span>
+        </a>
+        <a href="#" class="profile flex">
+          <img src="img/members.jpg" />
+          <span class="image-text">Members</span>
+        </a>
+      </nav>
+      <!-- NAVBAR -->
+
+      <!-- MAIN -->
+      <main>
+        <div class="head-title">
+          <div class="left">
+            <h1>Dashboard</h1>
+            <ul class="breadcrumb">
+              <li>
+                <a href="#">Dashboard</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i></li>
+              <li>
+                <a class="active" href="#">Grid</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- user table data -->
+
+  <div class="table-data">
+		<div class="order">
+			<div class="head">
+				<h3>Status Queue</h3>
+				<i class='bx bx-search' ></i>
+				<i class='bx bx-filter' ></i>
+			</div>
+			<table>
+				<thead>
+					<tr>
+						<th>Title</th>
+						<th>Assignment</th>
+						<th>Start time</th>
+						<th>End time</th>
+						<th>Bucket</th>
+						<th>Progress</th>
+						<th>Priority</th>
+
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<p>FPG</p>
+						</td>
+						<td>05-10-2022</td>
+            <td>10:30 Am</td>
+            <td>12:30 Am</td>
+            <td>To do</td>
+						<td><span class="status completed">Completed</span></td>
+            <td>
+              <p class="medium">Medium</p>
+            </td>
+					</tr>
+					<tr>
+						<td>
+							<p>AMQ</p>
+						</td>
+						<td>19-10-2022</td>
+            <td>05:30 Am</td>
+            <td>11:30 Am</td>
+            <td>To do</td>
+						<td><span class="status pending">Not started</span></td>
+            <td>
+              <p class="low">Low</p>
+            </td>
+					</tr>
+					<tr>
+						<td>
+							<p>High Jump</p>
+						</td>
+						<td>11-02-2023</td>
+            <td>06:30 Am</td>
+            <td>05:30 pm</td>
+            <td>Progress</td>
+						<td><span class="status process">In progress</span></td>
+            <td>
+              <p class="high">High</p>
+            </td>
+					</tr>
+					<tr>
+						<td>
+							<p>Ecomm Linux</p>
+						</td>
+						<td>19-10-2022</td>
+            <td>05:30 Am</td>
+            <td>11:30 Am</td>
+            <td>To do</td>
+						<td><span class="status pending">Not started</span></td>
+            <td>
+              <p class="low">Low</p>
+            </td>
+					</tr>
+					<tr>
+						<td>
+							<p>Ecomm Windows</p>
+						</td>
+						<td>11-02-2023</td>
+            <td>06:30 Am</td>
+            <td>05:30 pm</td>
+            <td>Progress</td>
+						<td><span class="status process">In progress</span></td>
+            <td>
+              <p class="high">High</p>
+            </td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+      </main>
+      <!-- MAIN -->
+    </section>
+    <!-- CONTENT -->
+
+    <!-- body section -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
